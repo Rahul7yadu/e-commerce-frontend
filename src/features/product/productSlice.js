@@ -11,8 +11,8 @@ import {
 
 const initialState = {
   products: [],
-  brands: [],
-  categories: [],
+  brands: [{value:'my-brand',label:'my-brand'}],
+  categories: [{value:'my-cat',label:'my-cat'}],
   status: 'idle',
   totalItems: 0,
   selectedProduct: null,

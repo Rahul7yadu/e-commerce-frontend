@@ -244,8 +244,8 @@ function ProductForm() {
                   Colors
                 </label>
                 <div className="mt-2">
-                  {colors.map((color) => (
-                    <>
+                  {colors.map((color,id) => (
+                    <div key={id}>
                       <input
                         type="checkbox"
                         {...register('colors', {})}
@@ -253,7 +253,7 @@ function ProductForm() {
                         value={color.id}
                       />{' '}
                       {color.name}
-                    </>
+                    </div>
                   ))}
                 </div>
               </div>
